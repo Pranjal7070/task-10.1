@@ -1,0 +1,114 @@
+/* Footer Info Styling */
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #008b8b; /* Dark Cyan */
+  color: #fff;
+  padding: 40px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* Footer Main Container */
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #fff; /* Light Background for the footer */
+  border-top: 3px solid #008b8b;
+  border-radius: 10px;
+}
+
+/* Explore, Support, Social Media Sections */
+.Explore,
+.support,
+.socialmedia {
+  color: #333; /* Dark text for readability */
+  padding: 10px;
+  flex: 1;
+}
+
+.Explore p,
+.support p,
+.socialmedia p {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #008b8b; /* Accent color */
+}
+
+/* Social Media Icons Section */
+.Icons {
+  display: flex;
+  gap: 20px; /* Increased gap for cleaner layout */
+}
+
+.Icons img {
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.Icons img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Hover effect with shadow */
+}
+
+/* Developer Info Section */
+.dev {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #008b8b; /* Accent color */
+  text-align: center;
+  margin-top: 30px;
+}
+
+.dev1 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.dev1 p {
+  margin: 0;
+  font-size: 14px;
+  cursor: pointer;
+  color: #008b8b;
+  transition: text-decoration 0.3s ease;
+}
+
+.dev1 p:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .foot {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Explore,
+  .support,
+  .socialmedia {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .Icons {
+    justify-content: center;
+  }
+}

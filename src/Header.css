@@ -1,0 +1,83 @@
+/* Header Styling */
+.head {
+  background-color: #222; /* Darker background for a sleek and modern look */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px; /* Increased padding for more breathing room */
+  border-bottom: 2px solid #333; /* Subtle bottom border to separate header */
+}
+
+/* Email input field */
+input[type='email'] {
+  padding: 12px;
+  width: 60%;
+  border: 1px solid #ccc;
+  border-radius: 25px; /* Rounded edges for a softer look */
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: #f4f4f4; /* Light background for better contrast */
+}
+
+input[type='email']:focus {
+  border-color: #007bff; /* Focus border color for emphasis */
+  background-color: #fff; /* Slight background change on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+/* Span Styling */
+span {
+  margin: 0 10px;
+  color: #fff; /* White text for contrast against dark background */
+  font-size: 16px;
+  font-weight: 500; /* Slightly bolder for emphasis */
+  transition: color 0.3s ease;
+}
+
+span:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+/* Search Bar Styling */
+.search-bar {
+  padding: 12px 20px;
+  width: 100%;
+  max-width: 800px; /* Limit width for better control */
+  border: 1px solid #ccc;
+  border-radius: 50px; /* Fully rounded search bar */
+  outline: none;
+  font-size: 16px;
+  background-color: #f4f4f4;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #007bff;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Focus shadow for emphasis */
+}
+
+.search-bar::placeholder {
+  color: #bbb; /* Lighter color for placeholder */
+  font-style: italic; /* Italic style for the placeholder text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .head {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px; /* Adjust padding on smaller screens */
+  }
+
+  input[type='email'],
+  .search-bar {
+    width: 90%; /* Make inputs take up more space on small screens */
+  }
+
+  span {
+    font-size: 14px; /* Slightly smaller font on mobile */
+    margin: 5px 0; /* Reduced margin for better layout on mobile */
+  }
+}

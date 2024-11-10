@@ -1,0 +1,119 @@
+/* Top Section Styling */
+.top {
+  text-align: center;
+  padding: 30px;
+  font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+  background: linear-gradient(135deg, #0077ff, #ff66cc);
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.top h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+/* Row Styling */
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Image Styling */
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Card Heading */
+.card h2 {
+  font-size: 22px;
+  margin: 15px 0 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Card Paragraph */
+.card p {
+  font-size: 15px;
+  color: #777;
+  margin: 5px 0;
+}
+
+/* Rating Styling */
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.rating img {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
+.author {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Button Styling */
+.button {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #0077ff;
+  color: #ffffff;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 119, 255, 0.3);
+}
+
+.button:hover {
+  background-color: #005bb5;
+  box-shadow: 0 6px 15px rgba(0, 119, 255, 0.4);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 85%;
+    margin-bottom: 20px;
+  }
+}
